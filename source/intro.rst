@@ -105,6 +105,7 @@ ZK 使用一个自定义的原子消息协议。
 .. image:: _static/zkperfreliability.jpg
 
 图中 1-5 表示如下五个事件:
+
 #. 一个 follower 失效和恢复
 #. 另外一个 follower 失效和恢复
 #. leader 失效 
@@ -114,6 +115,7 @@ ZK 使用一个自定义的原子消息协议。
 ZK 服务器组由 7 台服务器组成, 写请求的比例保持在 30%。
 
 几个观察到的现象
+
 * follower 失效和恢复足够快的话, ZK 能够保持高吞吐
 * leader 失效性能影响较大
 * 花了不到 200ms 来选举一个新的 leader
