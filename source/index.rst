@@ -3,18 +3,30 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to zookeeper入门's documentation!
-=========================================
+zookeeper入门
+==============
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
+   intro
+   usage
+   arch
+   srccode
 
 
-Indices and tables
-==================
+.. Indices and tables
+.. ==================
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+.. * :ref:`genindex`
+.. * :ref:`modindex`
+.. * :ref:`search`
+
+
+
+参考资料
+========
+
+.. [1] 文档组织参考 https://leveldb-handbook.readthedocs.io/zh/latest/basic.html#
+.. [2] sphinx 语法 https://zh-sphinx-doc.readthedocs.io/en/latest/contents.html
