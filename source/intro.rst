@@ -5,7 +5,7 @@ ZooKeeper 一个中心化的服务, 用于维护配置信息, 命名服务(namin
 它是一个开源的分布式应用程序协调服务, 作为 Google Chubby 的一个开源实现, 是 Hadoop 和 Hbase 的重要组件。
 ZooKeeper 的目标是封装好复杂易出错的关键服务, 暴露简单易用、高效、稳定的接口给用户, 提供 java 和 C 接口。
 
-以下内容参考/翻译自 ZooKeeper 官方文档[1]
+以下内容参考/翻译自 ZooKeeper 官方文档 [1]_
 
 设计目标
 ========
@@ -89,8 +89,7 @@ znode 中的数据读取都是原子的, 读写都是整个节点所有数据进
 而每一个更新操作都会先序列化到磁盘, 然后才会应用到内存数据库。
 
 * 读请求 - ZK 服务器根据的本地 Replicated Database 响应
-* 写请求 - ZK 服务器会将来自客户端的所有写请求转发到角色为 leader 的 ZK 服务器(leader 只有一个, 其它称为 follower) 来写,
-然后同步给 follower
+* 写请求 - ZK 服务器会将来自客户端的所有写请求转发到角色为 leader 的 ZK 服务器(leader 只有一个, 其它称为 follower) 来写, 然后同步给 follower
 
 ZK 使用一个自定义的原子消息协议。
 
@@ -130,4 +129,4 @@ ZK 服务器组由 7 台服务器组成, 写请求的比例保持在 30%。
 
 参考资料
 ========
-.. [1] http://zookeeper.apache.org/doc/current/zookeeperOver.html
+.. [1] 官方文档 http://zookeeper.apache.org/doc/current/zookeeperOver.html
