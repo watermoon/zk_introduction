@@ -14,6 +14,7 @@ zookeeper入门
    usage
    arch
    srccode
+   codeguide
 
 
 .. Indices and tables
